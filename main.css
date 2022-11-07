@@ -1,0 +1,379 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(Photos/wallpaperflare.com_wallpaper.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}
+
+.page-links {
+    flex: 1;
+    text-align: right;
+
+}
+
+.page-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.page-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+
+}
+
+.page-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: gold;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.page-links ul li:hover::after {
+    width: 100%;
+}
+
+.main-title {
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.main-title h1 {
+    font-size: 190px;
+    font-family: 'Lobster', cursive;
+}
+
+.main-title p {
+    margin: 10px 0 20px;
+    font-size: 30px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.main-title h5 {
+    font-size: 20px;
+    font-style: italic;
+    font-family: 'Lobster', cursive;
+}
+
+#about-modalBtn {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid White;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    margin-top: 20px;
+    font-family: 'Lobster', cursive;
+    font-size: 14px;
+
+}
+
+#about-modalBtn:hover {
+    border: 1px solid gold;
+    background: gold;
+    transition: 1s;
+}
+
+#aboutMeModal {
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    overflow: auto;
+    display: none;
+}
+
+#modal-textbox {
+    /* background-color: white; */
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    margin: 150px auto;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+
+}
+
+#modal-textbox img {
+    height: 300px;
+    width: 420px;
+    border-radius: 20px;
+    margin: 30px 0 30px 0;
+}
+
+#modal-textbox h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+#modal-footer {
+    margin-top: 20px;
+}
+
+#modal-footer a {
+
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+@media(max-width: 700px) {
+    .main-title h1 {
+        font-size: 20px;
+
+    }
+
+    .page-links ul li {
+        display: block;
+    }
+
+    .main-title p {
+        font-size: 16px;
+        display: block;
+    }
+}
+
+/*-------- tell me about yourself -----*/
+
+.projects {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    font-family: 'lobster', cursive;
+
+}
+
+.projects h1 {
+    font-size: 80px;
+    color: midnightblue;
+}
+
+.row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.projects-col {
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+
+}
+
+.projects-col img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+
+}
+
+.projects-col p {
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    color: midnightblue;
+}
+
+.projects-col h3 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: midnightblue;
+}
+
+#resume-Btn {
+    display: inline-block;
+    text-decoration: none;
+    color: midnightblue;
+    border: 1px solid midnightblue;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    margin-top: 20px;
+    font-family: 'Lobster', cursive;
+    font-size: 14px;
+
+}
+
+#resume-Btn:hover {
+    border: 1px solid gold;
+    background: gold;
+    transition: 1s;
+}
+
+#resume-Btn a {
+    text-decoration: none;
+}
+
+.img-wrapper {
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    height: 200px;
+
+}
+
+#img1 {
+    background: url(Photos/47cb0a0df2c3445897de4b8feef113e3.png);
+    background-size: cover;
+}
+
+#img2 {
+    background: url(Photos/9c955f1c58a6424cb55f1cb79c726bc8.png);
+    background-size: cover;
+
+}
+
+#img3 {
+    background: url(Photos/a0dd5960e08640e790c765a956ed6356.jpeg);
+    background-size: cover;
+
+}
+
+@media(max-width: 700px) {
+    .projects {
+        font-size: 20px;
+
+    }
+
+    .row {
+        display: block;
+    }
+}
+
+/*-------- wTEWRFAll-----*/
+
+#img4 {
+    background: url(Photos/20170226_134017.jpg) no-repeat center center fixed;
+    background-size: cover;
+    border-top: 5px solid gold;
+    border-bottom: 5px solid gold;
+
+}
+
+.img-wrapper2 {
+    margin-top: 30px;
+    overflow: hidden;
+    border-radius: 0px;
+    margin-bottom: 10px;
+    height: 300px;
+}
+
+
+.social-col {
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.layer {
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.layer:hover {
+    background: rgba(226, 169, 0, 0.7);
+
+}
+
+/*-------contact me-----*/
+
+.contact-me {
+    min-height: 75vh;
+    width: 100%;
+
+}
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+
+#submit {
+    background-color: gold;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+}
+
+
+#submit:hover {
+    background-color: green;
+}
+
+
+.container {
+    border-radius: 5px;
+    background-color: lightblue;
+    padding: 10px;
+    font-family: 'Bebas Neue', cursive;
+    height: 500px;
+    width: 500px;
+}
+
+
+.contact-me {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-media {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
