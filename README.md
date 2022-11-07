@@ -28,6 +28,8 @@
 
 [ ] Unsolved problems:
 - not very responsive, my form submit button isn't linked to local storage or database. So any input from users is not stored.
-- I couldn't install the motions NPM to add animations to my page. This created a fatal error with my terminal and forced me to create a whole new repository
+- I researched how to create a form and i followed the instructions however my HTML Check reads Error on line 158.
+- I couldn't install the motions NPM to add animations to my page. This created a fatal error with my terminal and forced me to create a whole new repository. Check Out Photo here: 
+# ![](/Screen%20Shot%202022-11-06%20at%207.24.04%20PM.png)
 - not enough design aspect/animation
 - very basic CSS styling would like to use more complex methods.
